@@ -12,23 +12,23 @@
         <h1>Create your simple account:</h1>
         <form action="">
             <label for="yourmail">Your e-mail</label>
-            <input type="email" name="yourmail" id="yourmail">
+            <input type="email" placeholder="YourEmail@example.com" name="yourmail" id="yourmail" required>
             <label for="username">Your username</label>
-            <input type="text" name="username" id="username">
+            <input type="text" placeholder="Maybe: DiscoDevil69" name="username" id="username" required>
             <label for="password">Your password</label>
-            <input type="password" name="password" id="password">
+            <input type="password" placeholder="Password" minlength="8" name="password" id="password" required>
             <label for="repeatpassword">Repeat your password</label>
-            <input type="password" name="repeatpassword" id="repeatpassword">
+            <input type="password" placeholder="Repeat password" minlength="8" name="repeatpassword" id="repeatpassword" required>
             <label for="pasta">Select you favorite pasta</label>
-            <select type="select" name="pasta" id="pasta">
-                    <option value="dog">Spagetti</option>
-                    <option value="dog">Fusilli</option>
-                    <option value="dog">Farfalle</option>
-                    <option value="dog">Rigatoni</option>
-                    <option value="dog">Penne</option>
-                    <option value="dog">Fettuccine</option>
+            <select type="select" name="pasta" id="pasta" required>
+                    <option value="pasta">Spagetti</option>
+                    <option value="pasta">Fusilli</option>
+                    <option value="pasta">Farfalle</option>
+                    <option value="pasta">Rigatoni</option>
+                    <option value="pasta">Penne</option>
+                    <option value="pasta">Fettuccine</option>
             </select>
-            <span>
+            <span class="checkbox">
                 <label for="apples">Do you like apples?</label>
                 <input type="checkbox" checked name="apples" id="apples">
             </span>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>A simple form</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Create your simple account:</h1>
+        <form action="">
+            <label for="yourmail">Your e-mail</label>
+            <input type="email" name="yourmail" id="yourmail">
+            <label for="username">Your username</label>
+            <input type="text" name="username" id="username">
+            <label for="password">Your password</label>
+            <input type="password" name="password" id="password">
+            <label for="repeatpassword">Repeat your password</label>
+            <input type="password" name="repeatpassword" id="repeatpassword">
+            <label for="pasta">Select you favorite pasta</label>
+            <select type="select" name="pasta" id="pasta">
+                    <option value="dog">Spagetti</option>
+                    <option value="dog">Fusilli</option>
+                    <option value="dog">Farfalle</option>
+                    <option value="dog">Rigatoni</option>
+                    <option value="dog">Penne</option>
+                    <option value="dog">Fettuccine</option>
+            </select>
+            <span>
+                <label for="apples">Do you like apples?</label>
+                <input type="checkbox" checked name="apples" id="apples">
+            </span>
+            <label for="why-apple">Explain your hate/love of apples:</label>
+            <textarea name="why-apple" id="why-apple" cols="20" rows="3"> </textarea>
+            <input type="submit" id="btn-submit">
+        </form>
+    </div>
+</body>
+</html>

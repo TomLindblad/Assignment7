@@ -13,9 +13,9 @@
         <form action="">
             <label for="yourmail">Your e-mail</label>
             <input type="email" placeholder="YourEmail@example.com" name="yourmail" id="yourmail" required>
-            <label for="username">Your username</label>
+            <label for="username">Your new username</label>
             <input type="text" placeholder="Maybe: DiscoDevil69" name="username" id="username" required>
-            <label for="password">Your password</label>
+            <label for="password">New password</label>
             <input type="password" placeholder="Password" minlength="8" name="password" id="password" required>
             <label for="repeatpassword">Repeat your password</label>
             <input type="password" placeholder="Repeat password" minlength="8" name="repeatpassword" id="repeatpassword" required>
@@ -27,12 +27,16 @@
                     <option value="pasta">Rigatoni</option>
                     <option value="pasta">Penne</option>
                     <option value="pasta">Fettuccine</option>
-            </select>
-            <span class="checkbox">
-                <label for="apples">Do you like apples?</label>
-                <input type="checkbox" checked name="apples" id="apples">
-            </span>
-            <label for="why-apple">Explain your hate/love of apples:</label>
+            </select>  
+
+            <div class="checkbox-container">
+                <label class="checkbox-label">Do you like apples?                        
+                    <input type="checkbox" checked>
+                    <span class="checkbox-custom rectangular"></span>
+                </label>
+            </div>
+
+            <label for="why-apple">Please, explain why:</label>
             <textarea name="why-apple" id="why-apple" cols="20" rows="3"> </textarea>
             <input type="submit" id="btn-submit">
         </form>
